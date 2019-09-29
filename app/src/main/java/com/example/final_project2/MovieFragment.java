@@ -33,7 +33,7 @@ public class MovieFragment extends Fragment {
         View v;
         v = inflater.inflate(R.layout.movie_fragment, container, false);
 //        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
-//        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+//        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);;
         recyclerView = (RecyclerView) v.findViewById(R.id.recycler_view);
 
         mAdapter = new MovieAdapter(movieList);
