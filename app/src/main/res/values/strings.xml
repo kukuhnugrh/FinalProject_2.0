@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Final_Project2</string>
+    <string name="tentang">Tentang</string>
+    <string name="keluar">KELUAR</string>
+    <string name="data_mahasiswa">DATA MAHASISWA</string>
+    <string name="cancel_job">Cancel Job</string>
+    <string name="start_job">Start Job</string>
+    <string name="tambah">TAMBAH</string>
 </resources>

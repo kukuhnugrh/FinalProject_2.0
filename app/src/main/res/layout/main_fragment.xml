@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <LinearLayout
@@ -13,29 +14,38 @@
             android:id="@+id/jobstart"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Start Job"
-            android:layout_weight="1" />
+            android:text="@string/start_job"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/jobcancel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Cancel Job"
-            android:layout_weight="1"/>
+            android:text="@string/cancel_job"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/dbmhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data_mahasiswa"
+        android:layout_below="@+id/container"/>
 
     <Button
         android:id="@+id/tentang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tentang"
-        android:layout_below="@+id/container"/>
+        android:text="@string/tentang"
+        android:layout_below="@+id/dbmhs"/>
 
     <Button
         android:id="@+id/keluar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="KELUAR"
+        android:text="@string/keluar"
         android:layout_below="@+id/tentang"/>
 
 </RelativeLayout>
