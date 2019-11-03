@@ -1,4 +1,4 @@
-package com.example.final_project2;
+package com.example.final_project2.Mahasiswa;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -16,7 +16,6 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String MAHASISWA_TABLE_NAME = "mahasiswa";
     public static final String MAHASISWA_COLUMN_NIM= "nim";
     public static final String MAHASISWA_COLUMN_NAMA = "nama";
-    public static final String MAHASISWA_COLUMN_NOHP = "noHp";
     private HashMap hp;
 
     public DBHelper(Context context) {
@@ -27,7 +26,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
         final String SQL_CREATE_MAHASISWA_TABLE = "CREATE TABLE "+ MAHASISWA_TABLE_NAME+"("+
-                MAHASISWA_COLUMN_NIM+" TEXT NOT NULL PRIMARY KEY, "+MAHASISWA_COLUMN_NAMA+" TEXT NOT NULL, "+MAHASISWA_COLUMN_NOHP+" TEXT NOT NULL)";
+                MAHASISWA_COLUMN_NIM+" TEXT NOT NULL PRIMARY KEY, "+MAHASISWA_COLUMN_NAMA+" TEXT NOT NULL, "+" TEXT NOT NULL)";
         db.execSQL(SQL_CREATE_MAHASISWA_TABLE);
     }
 

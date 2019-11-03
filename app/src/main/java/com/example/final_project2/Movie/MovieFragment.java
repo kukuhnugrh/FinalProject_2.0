@@ -1,4 +1,4 @@
-package com.example.final_project2;
+package com.example.final_project2.Movie;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -7,15 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.final_project2.Movie.Movie;
-import com.example.final_project2.Movie.MovieAdapter;
+import com.example.final_project2.R;
 
 import java.util.ArrayList;
 import java.util.List;
